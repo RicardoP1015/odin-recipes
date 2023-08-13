@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    background-color: #0c0120;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.header {
+    font-size: 55px;
+    color: white;
+    margin: 70px auto;
+    text-align: center;
+    text-shadow: 10px 10px 10px gold;
+}
+
+.hero-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.image-wrapper {
+    max-width: 500px;
+    margin: 0px 15% 0 5%;
+    box-shadow: 0px 0px 20px 8px gold;
+}
+
+.odins-recipes {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.odins-recipes li {
+    margin: 10px 0;
+}
+
+.links {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 400;
+    color: #080018;
+    transition: ease-in-out 0.2s;
+}
+
+.links:hover {
+    text-shadow: 10px 10px 10px gold;
+    font-weight: 800;
+}
+
+.post-it-note {
+    width: 400px;
+    height: 400px;
+    background-color: #7a786a;
+    background-image: url(https://www.transparenttextures.com/patterns/paper-fibers.png);
+    padding: 20px;
+    margin: 40px;
+    box-shadow: 0px 1px 20px 10px gold;
+    transform: rotate(-3deg);
+    position: relative;
+    overflow: hidden;
+}
+
+.post-it-note::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to right, transparent, #4e4e4e, transparent);
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+.post-it-note ul {
+    list-style: none;
+}
+
+.post-it-note li {
+    margin-bottom: 20px;
+}
+
+
+.post-it-note * {
+    position: relative;
+    z-index: 1;
+}
+
+.post-it-note .stain {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    opacity: 0.3;
+    top: 30%;
+    left: 20%;
+    border-radius: 50%;
+    z-index: 0;
+}
